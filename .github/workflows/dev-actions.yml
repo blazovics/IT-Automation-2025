@@ -13,9 +13,11 @@ jobs:
    - name: Checkout 
      uses: actions/checkout@v4.2.2
    - name: Setup dot Net
-     uses: actions/setup-dotnet@v3
+     uses: actions/setup-dotnet@v4
      with: 
-       dotnet-version: 3.1.x
+       dotnet-version: | 
+          3.1.x
+          9.0.x
      
      
  
