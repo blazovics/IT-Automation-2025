@@ -15,13 +15,11 @@ jobs:
    - name: Setup dot Net
      uses: actions/setup-dotnet@v4
      with: 
-       dotnet-version: 3.1.x
+       dotnet-version: '3.1.x'
    - name: Checkpoint
      run: echo "Hello World!"
-   - name: Restore dependencies
-     run: dotnet restore
    - name: Build
-     run: dotnet build --no-restore --configuration Release
+     run: dotnet build --configuration Release
      
      
  
