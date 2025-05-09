@@ -18,6 +18,10 @@ jobs:
        dotnet-version: | 
           3.1.x
           9.0.x
+   - name: Checkpoint
+     run: echo "Hello World!"
+   - name: Restore dependencies
+     run: dotnet restore
      
      
  
